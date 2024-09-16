@@ -1,0 +1,10 @@
+cd ~/ros2_ws
+colcon build --packages-select text_to_cmd_vel
+
+cd ~/ros2_ws
+ros2 run text_to_cmd_vel text_to_cmd_vel_node
+
+ros2 run turtlesim turtlesim_node
+
+ros2 topic pub --once /cmd_text std_msgs/String "data: 'turn_right'"
+
