@@ -1,0 +1,4 @@
+ros2 param set /turtlesim background_g 123
+
+ros2 service call /spawn turtlesim/srv/Spawn "{x: 2, y: 2, theta: 0.2, name: 'lala'}"
+
