@@ -1,0 +1,2 @@
+ros2 pkg prefix ros2topic >> package_path_ros2topic.txt
+ros2 pkg executables action_tutorials_py >> list_exec_action_tutorials.txt
