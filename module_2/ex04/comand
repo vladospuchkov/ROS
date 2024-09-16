@@ -1,0 +1,7 @@
+cd ~/ros2_ws/src
+colcon build --packages-select vlados_package1
+
+//
+
+colcon build --packages-select vlados_package1 > colcon_build.txt
+
