@@ -1,0 +1,22 @@
+ros2 run turtlesim turtlesim_node
+ros2 run turtlesim turtle_teleop_key
+
+для записи
+cd bag_files/
+ros2 bag record -o turtle_cmd_vel.mcap turtle1/cmd_vel
+
+для проигрывания
+ros2 topic echo /turtle1/pose
+\\
+ros2 topic echo /turtle1/pose >> pose_speed_x1.yaml
+
+cd bag_files/
+
+ros2 bag play turtle_cmd_vel.mcap 
+
+ros2 topic echo /turtle1/pose
+\\
+ros2 topic echo /turtle1/pose >> pose_speed_x2.yaml
+
+ros2 bag play turtle_cmd_vel.mcap -r 2
+
