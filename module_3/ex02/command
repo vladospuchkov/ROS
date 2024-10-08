@@ -1,0 +1,5 @@
+ros2 run turtlesim turtlesim_node
+
+ros2 run python_turtle_commands server
+
+ros2 run python_turtle_commands client
