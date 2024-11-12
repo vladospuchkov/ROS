@@ -3,4 +3,4 @@ source install/setup.bash
 ros2 launch sam_bot_description display.launch.py
 
 
-display.launch.py -> default_model_path = os.path.join(pkg_share, 'src/description/sam_bot_description.urdf')
+display.launch.py -> default_model_path = os.path.join(pkg_share, 'src/description/robot.urdf.xacro')
