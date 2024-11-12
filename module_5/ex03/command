@@ -1,0 +1,7 @@
+
+ros2 launch robot_bringup diff_drive.launch.py
+
+окно с газебо, нажать на три точки выбрать поиск набрать teleop, пролистать вниз и где топик /cmd_vel переименовать в 
+/model/robot/cmd_vel
+
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros_args -r /cmd_vel:=/robot/cmd_vel
