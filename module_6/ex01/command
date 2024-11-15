@@ -1,0 +1,7 @@
+colcon build --packages-select robot_bringup
+
+colcon build --packages-select robot_description
+
+. install/setup.bash
+
+ros2 launch robot_bringup robot_lidar.launch.py

@@ -1,0 +1,6 @@
+DepthCloud - выкл 
+
+Imu -> Enable acceleration -> вкл
+
+
+ros2 launch robot_bringup robot_imu.launch.py
