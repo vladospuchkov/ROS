@@ -1,0 +1,3 @@
+ros2 launch robot_bringup diff_drive.launch.py
+
+ros2 run circle_moving circle_moving
